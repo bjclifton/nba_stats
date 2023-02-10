@@ -1,24 +1,70 @@
+* {
+  font-family: 'Space Mono', monospace;
+}
+
 body {
   background-color: #333;
 }
 
 
-/* Algin the input field and button in the middle of the page, one on top of the other */
-#search {
+.container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+  height: 375px;
+}
+
+#search {
+  margin: 0 auto;
+  width: 50%;
   height: 100px;
-  background-color: white;
-  border: 1px solid #1a1a1a;
+  background-color: rgb(145, 145, 145);
+  border: 5px solid #1a1a1a;
   border-radius: 10px;
   box-shadow: 0 0 50px #1a1a1a;
+  color: #333;
+  text-align: center;
+  font-size: 30px;
 }
+
+#search:focus, #search:hover {
+  border: 5px solid #ff5500;
+  background-color: white;
+}
+
 
 ::placeholder {
   color: #333;
   text-align: center;
   font-size: 30px;
+}
+
+#search-button {
+  margin: 0 auto;
+  width: 51%;
+  height: 100px;
+  background-color: #151618;
+  border: 5px solid #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 50px #1a1a1a;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  
+}
+
+/* Style the "word" id so it is above the search box*/
+#word {
+  margin: 0 auto;
+  width: 51%;
+  height: 100px;
+  color: white;
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 100px;
 }
