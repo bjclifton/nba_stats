@@ -1,10 +1,8 @@
-require('dotenv').config();
-
 searchbtn = document.getElementById('search-button');
 searchbar = document.getElementById('search');
 wordDisplay = document.getElementById('word');
 
-const API_KEY = process.env.API_KEY;
+API_KEY = 'c3e9f124-8fd5-43a5-8bcf-e8ef5545a410';
 API_URL = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/word?key=' + API_KEY;
 let word = 'test';
 
